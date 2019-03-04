@@ -1,0 +1,20 @@
+{% extends 'd_a_app/index.html' %}
+
+{% block header %}
+My Entries
+{% endblock header %}
+
+
+{% block content %}
+
+{% if yourEntries %}
+
+{% for eachItem in yourEntries %}
+<h4>{{ eachItem.blogTitle }}</h4>
+
+{% endfor %}
+
+{% else %}
+<p>No Blog Entries To Show.</p>
+{% endif %}
+{% endblock content %}

@@ -1,0 +1,22 @@
+{% extends 'd_a_app/index.html' %}
+
+{% block header %}
+All Blog Entries
+{% endblock header %}
+
+{% block content %}
+
+{% if allEntries %}
+
+{% for eachItem in allEntries %}
+<h4>{{ eachItem.blogTitle }}</h4>
+{% if perms.d_a_app.delete_course %}
+<p><a href="#"> Delete? </a></p>
+
+{% endif %}
+{% endfor %}
+
+{% else %}
+<p>No Blog Entries To Show.</p>
+{% endif %}
+{% endblock %}
