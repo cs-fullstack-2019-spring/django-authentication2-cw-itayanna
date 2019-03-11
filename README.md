@@ -1,3 +1,7 @@
+### POINTS: 2
+### KEY: Looks great and looks like you were on track for challenge portion. 
+### Should probably use CASCADE delete option so bloggers posts get deleted if blogger deleted, but didn't cost you points.
+
 # Django Authentication CW
 
 ### Exercise 1:
